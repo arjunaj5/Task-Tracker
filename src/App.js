@@ -51,7 +51,7 @@ function setReminder(id){
     <div className="container">
     <Header title="Tasks Tracker" onAdd={()=>setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
     {showAddTask?<AddTask addTask={addTask}/>:undefined }
-    {tasks.length!=0?<Tasks tasks={tasks} deleteTask={deleteTask} setReminder={setReminder}/>:<h4>No tasks to show</h4>}
+    {tasks.length!==0?<Tasks tasks={tasks} deleteTask={deleteTask} setReminder={setReminder}/>:<h4>No tasks to show</h4>}
     </div>
   );
 }
